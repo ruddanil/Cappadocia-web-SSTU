@@ -1,0 +1,465 @@
+        /* Общие */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.wrap {
+    width: 100%;
+    height: 0px;
+}
+ul {
+    list-style: none;
+}
+a  {
+    text-decoration: none;
+    color: inherit;
+}
+a:hover {
+    text-decoration: underline;
+}
+.container {
+    margin: 0 auto;
+    /* overflow: hidden; */
+}
+
+
+        /* Меню */
+.head {
+    display: flex;
+    justify-content: center;
+    background-image: url(img/headFont.jpg);
+    height: 1080px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 200px;
+}
+
+.menu {
+    width: 1200px;
+    margin: 72px 5px 0px 5px;
+}
+.menu-list {
+    display: flex;
+    font-size: 24px;
+    color: black;
+    font-family: RobotoCondensed;
+}
+.menu-left {
+    margin-right: 52px;
+}
+.menu-right-push {
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+        /* Шапка */
+#txt_cap {
+    font-size: 250px;
+    font-family: Balqis;
+    height: 200px;
+    position: relative;
+    top: -380px;
+}
+#txt_exc {
+    font-family: RobotoCondensed;
+    font-size: 56px;
+    text-align: right;
+    position: relative;
+    top: -70px;
+}
+
+        /* Блок 1*/
+.blocks {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.block-1 {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    height: 932px;
+    margin-bottom: 200px;
+}
+.head-b1 {
+    width: 1200px;
+    height: 233px;
+}
+.header {
+    height: 232px;
+    font-size: 96px;
+    font-family: Balqis;
+    color: rgba(226, 171, 63, 1);
+}
+.sub {
+    text-align: left;
+    font-size: 24px;
+    font-family: RobotoCondensed;
+    color: rgba(0, 0, 0, 1);
+}
+#txt_fair {
+    width: 1200px;
+    margin: auto;
+}
+#txt_skaz {
+    text-align: left;
+    margin: -30px 180px;
+}
+.content {
+    display: flex;
+}
+#img-b1 {
+    margin: 0 55px 0 -360px;
+}
+.txt {
+    font-size: 18px;
+    font-family: RobotoCondensed;
+}
+#txt-b1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.bold-txt {
+    font-weight: bold;
+}
+
+        /* Блок 2*/
+.block-2 {
+    display: flex;
+    justify-content: space-between;
+    margin-right: -369px;
+    width: 1560px;
+    height: 1095px;
+    margin-bottom: 200px;
+}
+#txt_mar {
+    text-align: right;
+    position: relative;
+    top: -25px;
+    right: -50px;
+}
+.txt-b2 {
+    font-size: 24px;
+    font-family: RobotoCondensed;
+    margin-top: -15px;
+}
+.bold-txt-b2 {
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+.txt-block-b2 {
+    margin-bottom: 50px;
+}
+.button {
+    border: 1px solid #E2AB3F;
+    width: 280px;
+    height: 50px;
+    padding: 11px 53px;
+    color: black;
+    text-decoration: none;
+}
+
+        /* Блок 3*/
+.block-3 {
+    display: flex;
+    margin-bottom: 200px;
+    flex-direction: column;
+    align-self: center;
+    width: 1200px;
+    height: 934px;
+}
+.head-b3 {
+    width: 1200px;
+    height: 233px;
+}
+#text_sult {
+    position: relative;
+    top: -25px;
+    right: -120px;
+}
+#img-b3 {
+    margin-right: 98px;
+}
+#txt-b3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.txt-block-b3 {
+    display: flex;
+    flex-direction: column;
+}
+.img-block-b3 {
+    height: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+.p_b3+.p_b3 {
+    margin-top: 20px;
+}
+
+        /* Блок 4*/
+.block-4 {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    height: 560px;
+    margin-bottom: 200px;
+}
+.head-b4 {
+    width: 1200px;
+    height: 233px;
+}
+#txt_stoi {
+    margin: -25px 120px;
+}
+#txt-b4 {
+    display: flex;
+}
+.bold-txt-b4 {
+    font-weight: bold;
+    font-size: 24px;
+}
+.txt-left-b4 {
+    width: 528px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.txt-right-b4 {
+    width: 528px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-left: 75px;
+}
+.bold-txt-b4 {
+    margin-bottom: 50px;
+}
+.txt-block-b4 p {
+    margin-bottom: 20px;
+}
+#img-3-b4 {
+    position: relative;
+    right: -495px;
+    top: -350px;
+    width: 206px;
+    height: 305px;
+
+}
+#img-2-b4 {
+    position: relative;
+    width: 73px;
+    height: 108px;
+    top: -438px;
+    right: -452px;
+}
+#img-1-b4 {
+    position: relative;
+    width: 73px;
+    height: 108px;
+    top: -490px;
+    right: -385px;
+}
+
+        /* Блок 5*/
+.block-5 {
+    display: flex;
+    width: 1200px;
+    height: 800px;
+    margin-bottom: 200px;
+}
+.left-b5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+}
+#txt_date, #txt_price {
+    font-size: 96px;
+    font-family: Balqis;
+    color: rgba(226, 171, 63, 1);
+}
+#txt_date {
+    margin-left: -30px;
+    margin-top: 80px;
+}
+#txt_bliz {
+    margin-top: -27px;
+    margin-left: 144px;
+}
+#txt_price {
+    margin-left: 96px;
+    margin-top: -10px;
+}
+#txt_stoim {
+    margin-top: -20px;
+    margin-left: 121px;
+    margin-bottom: 100px;
+}
+.txt-block-b5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 383px;
+    height: 268px;
+
+}
+.txt-block-b5 p {
+    font-family: RobotoCondensed;
+    font-style: normal;
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+.textField {
+    border: 1px solid #E2AB3F;
+    width: 100%;
+    height: 50px;  
+    margin-bottom: 20px;
+    font-family: RobotoCondensed;
+    font-size: 18px;
+    padding: 15px 31px;
+}
+.otpr {
+    height: 50px;  
+    width: 280px;
+    border: 1px solid #E2AB3F;
+    background-color: white;
+    font-family: RobotoCondensed;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+        /* Подвал */
+.bottom {
+    display: flex;
+    background-image: url(img/bottom.jpg);
+    height: 1180px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    justify-content: center;
+}
+
+.txt-block-bot {
+    display: flex;
+    margin-right: 120px;
+    margin-top: 125px;
+    flex-wrap: wrap;
+    width: 356px;
+    height: 527px;
+    justify-content: center;
+    align-content: flex-start;
+    background-image: url(img/bottom-1.png);
+}
+#txt_cont {
+    font-family: Balqis;
+    color: rgba(226, 171, 63, 1);
+    font-size: 86px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.tele-bot, .email-bot {
+    display: flex;
+    align-items: center;
+    margin-bottom: 11px;
+}
+.social-bot {
+    display: flex;
+    margin-top: 33px;
+}
+#tel-bot {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px 0 0;
+}
+#tel-bot-soc {
+    width: 30px;
+    height: 30px;
+    margin: 0 7.5px 0 7.5px;
+}
+.txt-bot {
+    font-family: RobotoCondensed;
+    font-size: 18px;
+}
+.txt_dream {
+    font-family: Balqis;
+    font-size: 86px;
+    margin-top: 300px;
+}
+
+@font-face {
+    font-family: "Balqis";
+    src: url("src/fonts/Balqis.ttf");
+}
+@font-face {
+    font-family: "RobotoCondensed";
+    src: url("src/fonts/RobotoCondensed-Italic.ttf");
+}
+@media (max-width: 1920px){
+    .container {
+        max-width: 1920px;
+    }
+} 
+@media (max-width: 1024px){
+    .container {
+        max-width: 1024px;
+    }
+    .menu {
+        width: 1024px;
+        margin: 30px 30px 0px 30px;
+    }
+    .menu-list {
+        font-size: 18px;
+    }
+    #txt_cap {
+        font-size: 120px;
+        top: -35px;
+    }
+    #txt_exc {
+        font-size: 30px;
+        top: -35px;
+    }
+    .header {
+        font-size: 65px;
+    }
+    .sub {
+        font-size: 20px;
+    }
+    .head {
+        margin-bottom: 0px;
+        background-color: aqua;
+        height: 432px;
+        margin-bottom: 50px;
+    }
+    .content {
+        background-color: aqua;
+    }
+    #txt_fair {
+        width: 768px;
+        margin-left: 100px;
+    }
+    #txt_skaz {
+        margin: -20px 121px;
+    }
+    .head-b1 {
+        width: 768px;
+        height: 150px;
+    }
+    #img-b1 {
+        margin: 0px;
+        width: 336px;
+    }
+    #img-b1 img {
+        position: relative;
+    /* width: 530px; */
+    left: -650px;
+    height: 100%;
+    }
+}
