@@ -33,7 +33,6 @@ a:hover {
     background-repeat: no-repeat;
     background-size: 100%;
     flex-wrap: wrap;
-    margin-bottom: 200px;
 }
 
 .menu {
@@ -400,12 +399,12 @@ a:hover {
     font-family: "RobotoCondensed";
     src: url("src/fonts/RobotoCondensed-Italic.ttf");
 }
-@media (max-width: 1920px){
+@media (max-width: 1920px) and (min-width: 1024px){
     .container {
         max-width: 1920px;
     }
 } 
-@media (max-width: 1024px){
+@media (max-width: 1024px) and (min-width: 376px){
     .container {
         max-width: 1024px;
     }
@@ -550,6 +549,197 @@ a:hover {
     }
     #txt-b4 {
         width: 1024px;
+        height: 300px;
+        margin-left: 20px;
+    }
+    .bold-txt-b4 {
+        margin-bottom: 25px;
+    }
+    .txt-block-b4 p {
+        margin-bottom: 15px;
+    }
+    #img-3-b4 {
+        width: 145px;
+        top: -325px;
+        right: -415px;
+    }
+    #img-1-b4 {
+        width: 55px;
+        top: -390px;
+        right: -310px;
+    }
+    #img-2-b4 {
+        width: 73px;
+        top: -345px;
+        right: -375px;
+    }
+        /* Блок 5 */
+    .block-5 {
+        width: 100%;
+        margin-bottom: 100px;
+        height: 650px;
+    }
+    #txt_date {
+        margin-top: 0px;
+    }
+        /* Подвал */
+    .bottom {
+        height: 1100px;
+    }
+    .txt-block-bot {
+        margin-right: 35px;
+        margin-top: 65px;
+    }
+    .txt_dream {
+        margin-top: 255px;
+        font-size: 72px;
+    }
+}
+@media (max-width: 376px){
+    .container {
+        max-width: 375px;
+    }
+        /* Меню */
+    .menu {
+        width: 375px;
+        margin: 30px 30px 0px 30px;
+    }
+    .menu-list {
+        font-size: 18px;
+    }
+        /* Шапка */
+    #txt_cap {
+        font-size: 60px;
+        top: -215px;
+    }
+    #txt_exc {
+        font-size: 20px;
+        top: -20px;
+    }
+        /* Блок 1 */
+    .block-1 {
+        height: 600px;
+        margin-bottom: 100px;
+        max-width: 1024px;
+    }
+    .header {
+        font-size: 65px;
+        height: 140px;
+    }
+    .sub {
+        font-size: 20px;
+    }
+    .head {
+        margin-bottom: 0px;
+        height: 576px;
+        margin-bottom: 50px;
+    }
+    .head-b1 {
+        width: 768px;
+        height: 150px;
+    }
+    #txt_fair {
+        width: 768px;
+        margin-left: 100px;
+    }
+    #txt_skaz {
+        margin: -20px 121px;
+    }
+    .content {
+        height: 450px;
+    }
+    #img-b1 {
+        position: relative;
+        left: -105px;
+        width: 50%;
+        margin: 0px; 
+    }
+    #img-b1 img {
+        height: 100%;
+    }
+    #txt-b1 {
+        padding-left: 20px;
+    }
+    .txt {
+        font-size: 16px;
+    }
+        /* Блок 2 */
+    .block-2 {
+        width: 850px;
+        margin: 0 0 50px auto;
+        height: 650px;
+    }
+    .head-b2 {
+        padding-right: 20px;
+    }
+    .bold-txt-b2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .txt-block-b2 {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    #txt_mar {
+        right: 40px;
+        top: -20px;
+    }
+    .img img {
+        height: 650px;
+    }
+        /* Блок 3 */
+    .block-3 {
+        max-width: 375px;
+        height: 750px;  
+        margin-bottom: 50px;
+    }
+    .block-3 .content {
+        height: 650px;
+    }
+    .block-3 .header {
+        margin-left: 100px;
+    }
+    #text_sult {
+        top: -20px;
+    }
+    .block-3 .content {
+        height: 610px;
+    }
+    #img-b3 img {
+        height: 610px;
+    }
+    .head-b3 {
+        height: 150px;
+        width: 375px;
+    }
+    .img-block-b3 img {
+        height: 140px;
+    }
+    #img-b3 {
+        margin-right: 20px;
+    }
+        /* Блок 4 */
+    .block-4 {
+        max-width: 375px;
+        height: 440px;
+        margin-bottom: 50px;
+    }
+    .block-4 .header {
+        margin-left: 100px;
+    }
+    .head-b4 {
+        width: 375px;
+        height: 140px;
+    }
+    .txt-left-b4 {
+        width: 40%;
+    }
+    .txt-right-b4 {
+        width: 40%;
+        margin-left: 20px;
+    }
+    #txt-b4 {
+        width: 375px;
         height: 300px;
         margin-left: 20px;
     }
