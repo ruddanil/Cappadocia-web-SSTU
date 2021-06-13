@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <!-- Практическая работа №1 -->
+
+    <!-- Задание 1 -->
+    <!-- <script>
+        let name = 123;
+        if (typeof name == 'number') {
+            alert(name);
+        } else {
+            alert('Не число!');
+        }    
+    </script> -->
+
+    <!-- Задание 1 -->
+    <!-- <script>
+        let result = prompt("Введите ваш социотип:");
+        switch(result){
+            case 'Роб': alert("Да вы стратег!");
+            break;
+            case 'Есь': alert("Да уж, не повезло...");
+            break;
+            case 'Дон': alert("Хороший чел, позитивный");
+            break;
+            default: alert("А другие типы я не стал писать, сорян");
+        }
+    </script> -->
+
+    <!-- Задание 2 -->
+    <!-- <script>
+        let i = 0;
+        while (i < 40) {
+            i++;
+            console.log(i);
+        }
+        for (i = 1; i < 41; i++) {
+            console.log(i);
+        }
+        do {
+            i++
+            console.log(i);
+        } while (i < 40);
+    </script> -->
+
+    <!-- Задание 3 -->
+    <!-- <script>
+        while(1) alert("Извини, таково моё задание :)");
+    </script>     -->
+
+    <!-- Задание 4 -->
+    <!-- <script>
+        let arr = [], i = 0;
+        while (i < 3) {
+            arr[i] = prompt('Введите число');
+            i++;
+        }
+        console.log(arr.sort());
+    </script> -->
+
+    <!-- Задание 5 -->
+    <!-- <script>
+        for (let i = 0; i <= 15; i++) {
+            if (i%2 == 0) console.log(`Число ${i} - четное`);
+            else console.log(`Число ${i} - нечетное`);
+        }
+    </script> -->
+
+    <!-- Задание 6 -->
+    <!-- <script>
+        num = null;
+        while (num < 6) num = prompt("Введите число больше 5");
+        alert ("Поздравляю!");
+    </script> -->
+
+    <!-- Задание 7 -->
+    <!-- <script>
+        for (let i = 8; i < 21; i += 2) console.log(i);
+        for (let i = 8; i < 21; i++) if (i % 2 == 0) console.log(i);
+    </script> -->
+
+    <!-- Задание 8 -->
+    <!-- <script>
+        let sum = 0;
+        for (let i = 0; i < 1000; i++) {
+            if (i % 3 == 0 || i % 5 == 0) sum+=i;
+        }
+        alert(sum);
+    </script> -->
+
+    <!-- Задание 9 -->
+    <!-- <script>
+        let num = prompt("Введите трехзначное число");
+        while (num > 999 || num < 100) num = prompt("Некорректное число");
+        let digits = num.split(''); // каждый элемент строки в массив
+        let realDigits = digits.map(Number); // метод преобразовываем каждый элемент в number
+        if ((realDigits[0]**3+realDigits[1]**3+realDigits[2]**3) == num) alert (`${num} - число Армстронга`);
+        else (alert(`${num} - не является числом Армстронга`));
+    </script> -->
+
+    <!-- Задание 10 -->
+    <!-- <script>
+        let star = '*';
+        for (let i = 0; i < 5; i++) {
+            for (let j = i; j <= i; j++) {
+                console.log(star);
+                star += ' *';
+            }
+        }
+        let star2 = '*';
+        while (star2.length <= 5) {
+            console.log(star2 + '\n');
+            star2 += '*';
+        }
+    </script> -->
+
+    <!-- Практическая работа №2 -->
+
+    <!-- Задание 1 -->
+    <!-- <script>
+        function showMesage() {
+            let name = 'Кирилл';
+            alert(`Привет, ${name}!`);
+        }
+        showMesage();
+    </script>     -->
+
+    <!-- Задание 2 -->
+    <!-- <script>
+        let name = prompt('Представьтесь, пожалуйста');
+        function hello() {
+            alert(`Привет, ${name}!`);
+        }
+    </script>
+    <input value="Нажми меня" onclick="hello()" type="button"> -->
+
+    <!-- Задание 3 -->
+    <!-- <script>
+        let min = (a, b) => { 
+            if (a > b) alert(b);
+            else alert(a);
+        };
+        min(+prompt('Число 1'), +prompt('Число 2'));
+    </script> -->
+
+    <!-- Задание 4,5 -->
+    <script>
+        function quadraticEquation(a, b, c) {
+            let D = b * b - 4 * a * c;
+            if (a == 0) {
+                console.log(`A не может быть равно 0`);
+                return 0;
+            }
+            console.log(`Дискриминант = ${D}`);
+            if (D < 0)
+                console.log(`Корней нет`);
+            if (D == 0)
+                console.log(`x = ${(-b + Math.sqrt(d)) / (2 * a)}`);
+            else if (D > 0) {
+                console.log(`D = ${D}, x1 = ${(-b + Math.sqrt(D)) / (2 * a)}, x2 = ${(-b - Math.sqrt(D)) / (2 * a)}`);
+            }
+        }
+        let a, b, c;
+        do {
+            a = prompt('Введите A:');
+        } while (!a || a === null || a === ' ');
+        do {
+            b = prompt('Введите B:');
+        } while (!b || b === null || b === ' ');
+        do {
+            c = prompt('Введите C:');
+        } while (!c || c === null || c === ' ');
+        console.log(quadraticEquation(a, b, c));
+    </script>
+
+    <!-- Практическая работа №3 -->
+
+    <!-- Задание 1, 2, 4, 5, 6, 7, 8 -->
+    <!-- <script>
+        let arr = [1, 2, 3, 4, 5];
+        let arr1 = new Array(7, 14, 99);
+        let arr3 = arr.map(el => el * 3);
+        
+        alert(`${arr[4]}`);
+        arr[4] = 10;
+        
+        console.log(arr1);
+        for (let i = 0; i < arr.length; i++) console.log(arr[i]);
+        arr.forEach(el => console.log(el));
+
+        var arrAdd = arr.concat(arr1);
+        alert(arrAdd);
+        alert(arrAdd.pop());
+        alert(arrAdd.shift());
+        arrAdd.push('New');
+        arrAdd.unshift('New');
+        alert(arrAdd);
+    </script> -->
+
+    <!-- Задание 3 -->
+    <!-- <input id="button" type="button" value="Add to favorites">
+    <script>
+        let arr = [1, 2, 3, 4, 5];
+        var a = document.getElementById('button');
+        a.onmouseover = function (e) {
+            alert(arr.length);
+        }
+    </script> -->
+
+    <!-- Задание 9 -->
+    <!-- <script>
+        let arr = [];
+        let arrRes = [];
+        for (let i = 0; i < 3; i++) {
+            do {
+                arr[i] = prompt(`Введите число ${i + 1}`);
+            } while (!arr[i] || arr[i] === null || isNaN(arr[i]));
+            arrRes[i] = Math.sqrt(arr[i]);
+        }
+        alert(arrRes);
+    </script> -->
+
+    <!-- Задание 9, 10 -->
+    <!-- <script>
+        var now = new Date();
+        alert(now);
+        var date = new Date(2016, 10, 11);
+        alert(date);
+    </script> -->
+
+    <!-- Задание 11 -->
+    <!-- <script>
+        function addRand() {
+            let a = Math.random() * 50;
+            let b = Math.random() * 50;
+            let res = a * b;
+            console.log(a);
+            console.log(b);
+            console.log(res);
+        }
+        addRand();
+    </script> -->
+
+    <!-- Практическая работа №4 -->
+
+    <!-- Задание 1, 2 -->
+    <!-- <script>
+        let student2 = {
+            name: "Кирилл",
+            age: 19
+        };
+        function Student(firstName, lastName, date) {
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.date = date;
+        }
+        let newStudent = new Student("Даниил", "Рудь", 1999);
+        newStudent.name = function () {
+            return this.firstName + " " + this.lastName;
+        };
+        newStudent.age = function () {
+            let now = new Date();
+            let year = new Date(now.getFullYear());
+            return year - this.date;
+        };
+        console.log(newStudent.name());
+        console.log(newStudent.age());
+        console.log(newStudent);
+        console.log(student2);
+    </script> -->
+    <!-- This - ключевое слово, используемое для доступа к информации внутри объекта. 
+    Задается неявно. -->
+
+
+    <!-- Задание 3 -->
+    <!-- <script>
+        let human = {
+            type: "Animal",
+            planet: "Earth",
+        };
+        function Student(firstName, lastName, sex, date, town, course, group) {
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.sex = sex;
+            this.date = date;
+            this.course = course;
+            this.group = group;
+            this.name = function () { return this.firstName + " " + this.lastName; };
+        }
+        let student1 = new Student("Даниил", "Рудь", "М", 1999, "Санкт-Петербург", 1, "IFST-12");
+        student1.__proto__ = human;
+    </script> -->
+
+</body>
+
+</html>

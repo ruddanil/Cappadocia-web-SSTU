@@ -6,12 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable = no'>
     <title>Каппадокия</title>
-    <link type="text/css" rel="stylesheet" href="style.css">
+    <link type="text/css" rel="stylesheet" media="all" href="style.css" id="theme_css" />
 </head>
 
 <html>
 
 <body>
+    <button class="theme-button" onclick="switchTheme()">Переключить тему</button>
     <div class="container">
         <div class="head">
             <nav class="menu">
@@ -43,7 +44,7 @@
                 </div>
                 <div class="content">
                     <div class="img" id="img-b1">
-                        <img src="img/block1.jpg">
+                        <img src="" id="img-anim-b1">
                     </div>
                     <div class="txt" id="txt-b1">
                         <div class="txt-block-b1">
@@ -116,11 +117,11 @@
                             <p>Трансфер в Анкару</p>
                             <p>Вылет в Киев</p>
                         </div>
-                        <div class="button"><a href="#">ЗАБРОНИРОВАТЬ</a></div>
+                        <input type="submit" id="button" value="ЗАБРОНИРОВАТЬ" class="otpr">
                     </div>
                 </div>
                 <div class="img" id="img-b2">
-                    <img src="img/block2.jpg">
+                    <img src="img/block2.jpg" id="img-anim-b2">
                 </div>
             </div>
             <div class="block-3">
@@ -221,7 +222,7 @@
                         <p>Оставить заявку или задать вопрос</p>
                         <input type="text" value="Имя" class="textField">
                         <input type="tel" value="Телефон" class="textField">
-                        <input type="submit" value="ОСТАВИТЬ ЗАВКУ" class="otpr">
+                        <input id="button" type="submit" value="ОСТАВИТЬ ЗАВКУ" class="otpr">
                     </div>
                 </div>
                 <div class="right-b5">
@@ -257,6 +258,48 @@
             </div>
         </div>
     </div>
+    <script>
+        function switchTheme() {
+            let check = document
+                .getElementById('theme_css')
+                .classList[0] === 'light';
+
+            let element = document.getElementById('theme_css');
+
+            if (check) {
+                element.href = 'dark.css';
+                element.classList.remove('light')
+                element.classList.add('dark');
+            } else {
+                element.href = 'style.css';
+                element.classList.remove('dark')
+                element.classList.add('light');
+            }
+        }
+    </script>
+    <script>
+        let imagesB1 = new Array();
+        let i = 0;
+        imagesB1[0] = 'img/img-2.jpg';
+        imagesB1[1] = 'img/img-3.jpg';
+        imagesB1[2] = 'img/block1.jpg';
+
+        let imagesB2 = new Array();
+        imagesB2[0] = 'img/block2.jpg';
+        imagesB2[1] = 'img/block2-2.jpg';
+        imagesB2[2] = 'img/block2-3.jpg';
+
+        function viewImages() {
+            document.getElementById("img-anim-b1").src = imagesB1[i];
+            document.getElementById("img-anim-b2").src = imagesB2[i];
+            i++;
+            if (i == imagesB1.length) {
+                i = 0;
+            }
+            setTimeout("viewImages()", 3000);
+        }
+        viewImages();
+    </script>
 </body>
 
 </html>
